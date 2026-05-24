@@ -170,13 +170,16 @@
 
   .hero-image {
     position: relative;
+    display: flex;
+    justify-content: center;
   }
   .hero-image img {
-    width: 100%;
+    width: min(100%, 360px);
+    max-width: 100%;
     border-radius: 12px;
     display: block;
-    object-fit: cover;
-    aspect-ratio: 3/4;
+    height: auto;
+    object-fit: contain;
     box-shadow: 0 20px 60px rgba(0,0,0,0.08);
   }
   .hero-image-badge {
